@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { SiApacherocketmq } from 'react-icons/si';
+import { GiRocketFlight } from 'react-icons/gi';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
@@ -33,7 +33,7 @@ function Navbar() {
         <nav className='navbar'>
           <div className='navbar-container container'>
             <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-              <SiApacherocketmq className='navbar-icon' />
+              <GiRocketFlight className='navbar-icon' />
               SpaceX 
             </Link>
             <div className='menu-icon' onClick={handleClick}>
