@@ -2,6 +2,7 @@ import React from 'react';
 import * as dayjs from 'dayjs'
 import { findFlagUrlByCountryName } from "country-flags-svg";
 import CircularProgress from '@material-ui/core/CircularProgress';
+import Divider from '@material-ui/core/Divider';
 
 
 class PastLaunch extends React.Component {
@@ -60,6 +61,7 @@ class PastLaunch extends React.Component {
                     <img src={findFlagUrlByCountryName(item.nationality)} alt='nacionality' width="3%"/>
                 </div>
                 </ul>
+                <Divider />
             </div>
         )
     }
