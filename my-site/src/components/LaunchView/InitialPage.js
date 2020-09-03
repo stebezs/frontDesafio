@@ -7,6 +7,9 @@ import Tab from '@material-ui/core/Tab';
 import AppBar from '@material-ui/core/AppBar';
 import TabPanel from './Tabpanel';
 import NextLaunch from './NextLaunch';
+import UpcomingLaunch from './UpcomingLaunch';
+import LatestLaunch from './LatestLaunch';
+import PastLaunch from './PastLaunch';
 
 
 
@@ -46,13 +49,13 @@ function InitialPage() {
           <NextLaunch />
         </TabPanel>
         <TabPanel value={value} index={1}>
-          Item Two
+          <UpcomingLaunch />
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+          <LatestLaunch />
         </TabPanel>
         <TabPanel value={value} index={3}>
-          Item Four
+          <PastLaunch />
         </TabPanel>
       </div>
 

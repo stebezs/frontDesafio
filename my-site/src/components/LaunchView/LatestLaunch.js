@@ -4,7 +4,7 @@ import { findFlagUrlByCountryName } from "country-flags-svg";
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 
-class NextLaunch extends React.Component {
+class LatestLaunch extends React.Component {
     constructor(props) {
 
         super(props);
@@ -17,7 +17,7 @@ class NextLaunch extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://127.0.0.1:8000/api/next/')
+        fetch('http://127.0.0.1:8000/api/latest/')
             .then(res => res.json())
             .then(json => {
                 this.setState({
@@ -38,7 +38,6 @@ class NextLaunch extends React.Component {
 
     renderObject() {
         const { item } = this.state;
-        console.log(findFlagUrlByCountryName(item.nationality))
         return (
             <div>
                 <body>
@@ -66,4 +65,5 @@ class NextLaunch extends React.Component {
         )
     }
 }
-export default NextLaunch;
+export default LatestLaunch;
+
