@@ -12,3 +12,6 @@
 
     npm start
 
+### Para visualizar os dados da API
+
+    http://localhost:3000/pagina-inicial
