@@ -10,7 +10,7 @@ import NextLaunch from './NextLaunch';
 import UpcomingLaunch from './UpcomingLaunch';
 import LatestLaunch from './LatestLaunch';
 import PastLaunch from './PastLaunch';
-
+import ReactAwesomeClock from "react-awesome-clock";
 
 
 const allyProps = (index) =>({
@@ -21,6 +21,7 @@ const allyProps = (index) =>({
 
 const useStyles = makeStyles((theme) => ({
     root: {
+      paddingTop: 20,
       flexGrow: 1,
       backgroundColor: theme.palette.background.paper,
       
@@ -37,6 +38,8 @@ function InitialPage() {
 
     return (
         <div className={classes.root}>
+          <ReactAwesomeClock day={true} style={{ color: "black", fontSize: 60 }} startDate="2020-06-06" />
+          <h2 align="center">Data do Próximo lançamento</h2>
         <AppBar position="static">
           <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered >
             <Tab label="Pŕoximo lançamento" {...allyProps(0)} />

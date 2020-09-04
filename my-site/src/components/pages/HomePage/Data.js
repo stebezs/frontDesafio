@@ -20,7 +20,7 @@ export const homeBoxOne = {
                 + 'Ridiculus mus mauris vitae ultricies. Quis risus sed vulputate odio ut enim blandit volutpat.',
     buttonLabel: 'Comece agora',
     imgStart: '',
-    img: 'images/Rocket-bro.svg',
+    img: 'images/Rocket.gif',
     alt: 'Rocket'
   };
   
